@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Sample resource delay",
+    "description": "Demonstrte how to delay a request in manifest v3.",
+    "version": "1.0.0",
+    "action": {},
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "storage",
+        "declarativeNetRequest",
+        "webRequest",
+        "scripting"
+    ],
+    "declarative_net_request" : {
+        "rule_resources" : [{
+          "id": "ruleset_1",
+          "enabled": false,
+          "path": "rules_1.json"
+        }]
+    },
+    "host_permissions": ["<all_urls>"]
+  }

@@ -1,0 +1,12 @@
+[
+    {
+        "id" : 1,
+        "priority": 1,
+        "action" : { "type" : "block" },
+        "condition" : {
+            "urlFilter" : "*://*.medium.com/*/*MainContent.*.js",
+            "initiatorDomains" : ["medium.com"],
+            "resourceTypes" : ["script"]
+        }
+    }
+]
